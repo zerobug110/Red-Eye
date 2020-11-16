@@ -1,0 +1,38 @@
+.services {
+    grid-column: col-start 1 / col-end;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 2rem;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        background-color: $light-blue;
+        padding: 2rem;
+
+        box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
+                    0 .1rem .2rem 0 rgba(0,0,0, .2);
+    }
+    
+    &__text {
+        font-size: 1.6rem;
+       //text-align: center;
+
+
+        &--heading {
+            font-size: 2rem;
+            font-weight: 300;
+            color: $primary-color;
+            text-transform: capitalize;
+            margin-bottom: 1rem;
+
+        }
+
+        &--info {
+            color: #444;
+        }
+    }
+}
