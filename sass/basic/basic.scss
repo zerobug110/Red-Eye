@@ -21,5 +21,5 @@ body {
     display: grid;
     grid-template-columns: [full-start]5rem 1fr 8rem[side-bar-start] repeat(8, [col-start] minmax(min-content, 14rem))[col-end] 1fr[content-end] 10rem[full-end];
     //grid-template-rows:  100vh repeat(2, min-content);
-    grid-row-gap: 7rem;
+    grid-row-gap: 10rem;
 }

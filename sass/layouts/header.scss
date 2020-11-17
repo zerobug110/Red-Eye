@@ -1,10 +1,11 @@
 .header {
     grid-column: full-start / content-end;
 
-    background-image: radial-gradient(rgba(0,0,0, .9),rgba(0,0,0, .9)), url(../images/background7.jpg);
+    background-image: radial-gradient(rgba(6, 9, 14, .9),rgba(6, 9, 14, .9)), url(../images/background7.jpg);
     background-size: cover;
     background-position: bottom;
     height: 100vh;
+    position: relative;
 }
 
 .nav {
