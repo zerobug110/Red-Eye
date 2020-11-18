@@ -103,7 +103,7 @@ body {
   justify-content: space-evenly;
   align-items: center; }
   .partners__img-box {
-    width: 5rem;
+    width: 6rem;
     height: 5rem; }
   .partners__logo {
     width: 100%;
@@ -180,9 +180,22 @@ body {
   grid-row: 3 / -1; }
 
 .staffs {
-  grid-column: full-start / full-end;
-  background-color: crimson;
-  padding: 10rem; }
+  grid-column: col-start 1 / col-end; }
+  .staffs__info {
+    font-size: 1.6rem;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0 auto;
+    color: #666; }
+  .staffs__image-box {
+    width: 70rem;
+    height: 35rem;
+    margin: 0 auto;
+    transform: translateY(4rem);
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2); }
+  .staffs__img {
+    width: 100%;
+    height: 100%; }
 
 .store {
   grid-column: full-start / full-end;
