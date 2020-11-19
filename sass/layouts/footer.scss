@@ -1,5 +1,6 @@
 .footer {
     grid-column: full-start / full-end;
-    background-color: yellow;
+    background-color: $light-blue;
     padding: 10rem;
+    margin-top: -10rem;
 }

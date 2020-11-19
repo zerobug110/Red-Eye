@@ -7,10 +7,6 @@
         grid-column-gap: 10rem;
         grid-row-gap: 5rem;
         align-items: center;
-       
-
-        box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
-                    0 .1rem .2rem 0 rgba(0,0,0, .2);
     }
 
     &__text {
@@ -24,6 +20,9 @@
         grid-template-rows: repeat(4, 8rem,);
         grid-gap: 1rem;
         padding: 1rem;
+
+        box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
+                    0 .1rem .2rem 0 rgba(0,0,0, .2);
 
         &--content {
         }

@@ -1,0 +1,77 @@
+.appointment {
+    grid-column: col-start 1 / col-end;
+    margin-top: 10rem;
+   
+
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-column-gap: 5rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+
+    }
+
+    &__info {
+        font-size: 1.6rem;
+        color: #444;
+        text-align: center;
+    }
+}
+
+.text-input {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: $light-blue;
+    border: none;
+    outline: none;
+
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
+    0 .1rem .2rem 0 rgba(0,0,0, .2);
+    
+    &::placeholder {
+        font-family: sans-serif;
+        color: #444;
+    }
+}
+
+.textarea {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 1rem;
+    background-color: $light-blue;
+    border: none;
+    outline: none;
+
+
+
+    &::placeholder {
+        font-family: sans-serif;
+        color: #444;
+    }
+}
+
+.submit-btn {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #fff;
+    outline: none;
+    border: none;
+    background-color: $primary-color;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin: 2rem auto;
+
+
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
+    0 .1rem .2rem 0 rgba(0,0,0, .2);
+}
