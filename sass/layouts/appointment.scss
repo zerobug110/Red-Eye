@@ -7,7 +7,7 @@
     &__container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        grid-column-gap: 5rem;
+        grid-column-gap: 10rem;
     }
 
     &__form {
