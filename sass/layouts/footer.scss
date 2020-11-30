@@ -1,6 +1,48 @@
 .footer {
     grid-column: full-start / full-end;
-    background-color: $light-blue;
-    padding: 10rem;
+    display: grid;
+    grid-template-columns: [full-start]5rem 1fr 8rem[side-bar-start] repeat(8, [col-start] minmax(min-content, 14rem))[col-end] 1fr[content-end] 10rem[full-end];
+
+
+    font-size: 1.6rem;
+    color: #666;
+    align-items: center;
     margin-top: -10rem;
+    padding: 5rem 0;
+    background-color: $light-blue;
+
+    &__items {
+        list-style: none;
+        text-transform: capitalize;
+    }
+
+    &__main {
+        grid-column: col-start 1 / col-end;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 5rem;
+        text-align: center;
+
+    }
+
+    &__social-media {
+        grid-column: col-start 1 / col-end;
+        width: 20rem;
+        transform: translateY(3rem);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+.icons {
+    fill: #666;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    &:hover {
+        fill: #fff;
+    }
 }
