@@ -280,6 +280,28 @@ body {
   background-size: cover;
   background-position: center;
   height: 60rem; }
+  .testimony__textbox {
+    max-width: 80rem;
+    margin: 15rem auto;
+    color: #777;
+    font-size: 1.6rem;
+    text-align: center; }
+  .testimony__text {
+    font-style: italic; }
+  .testimony__heading {
+    color: #805203;
+    text-transform: uppercase; }
+
+.figcaption {
+  width: 8rem;
+  height: 8rem;
+  margin: 3rem auto; }
+
+.fig__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 0.3rem solid #805203; }
 
 .works {
   grid-column: full-start / full-end;

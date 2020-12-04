@@ -4,4 +4,36 @@
     background-size: cover;
     background-position: center;
     height: 60rem;
+
+    &__textbox {
+        max-width: 80rem;
+        margin: 15rem auto;
+        color: #777;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    &__text {
+        font-style: italic;
+    }
+
+    &__heading {
+        color: $primary-color;
+        text-transform: uppercase;
+    }
+}
+
+.figcaption {
+    width: 8rem;
+    height: 8rem;
+    margin: 3rem auto;
+    
+}
+
+.fig__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: .3rem solid $primary-color;
+    
 }
