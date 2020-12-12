@@ -56,12 +56,16 @@ body {
     text-decoration: none; }
 
 .logo {
-  width: 4rem;
-  height: 4rem;
-  margin-left: 5rem; }
-  .logo__img {
-    width: 100%;
-    height: 100%; }
+  margin-left: 5rem;
+  font-size: 3rem;
+  font-weight: 999; }
+  .logo__text {
+    color: #fff;
+    letter-spacing: .1rem; }
+  .logo__color {
+    color: #d40404;
+    font-weight: bolder;
+    font-size: 2rem; }
 
 .btn {
   font-size: 1.6rem;
@@ -291,6 +295,8 @@ body {
   .testimony__heading {
     color: #805203;
     text-transform: uppercase; }
+  .testimony__name {
+    font-style: italic; }
 
 .figcaption {
   width: 8rem;

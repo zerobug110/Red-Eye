@@ -21,6 +21,10 @@
         color: $primary-color;
         text-transform: uppercase;
     }
+
+    &__name {
+        font-style: italic;
+    }
 }
 
 .figcaption {
