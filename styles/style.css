@@ -110,7 +110,7 @@ body {
   align-items: center; }
   .partners__img-box {
     width: 6rem;
-    height: 6rem; }
+    height: 5rem; }
   .partners__logo {
     width: 100%;
     height: 100%; }
@@ -136,7 +136,7 @@ body {
       text-transform: capitalize;
       margin-bottom: 1rem; }
     .services__text--info {
-      color: #666; }
+      color: #8b949c; }
 
 .about {
   grid-column: col-start 1 / col-end; }
@@ -148,7 +148,7 @@ body {
     align-items: center; }
   .about__text {
     font-size: 1.6rem;
-    color: #666; }
+    color: #8b949c; }
   .about__gallery {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -192,11 +192,11 @@ body {
     text-align: center;
     max-width: 50rem;
     margin: 0  auto 3rem auto;
-    color: #666; }
+    color: #8b949c; }
   .staffs__details {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; }
+    justify-content: space-around; }
   .staffs__name {
     font-size: 2.5rem;
     font-weight: 400;
@@ -237,7 +237,7 @@ body {
     margin-top: 2rem; }
   .appointment__info {
     font-size: 1.6rem;
-    color: #444;
+    color: #8b949c;
     text-align: center; }
 
 .text-input {
@@ -252,7 +252,7 @@ body {
   box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2); }
   .text-input::placeholder {
     font-family: sans-serif;
-    color: #444; }
+    color: #8b949c; }
 
 .textarea {
   font-size: 1.6rem;
@@ -264,7 +264,7 @@ body {
   outline: none; }
   .textarea::placeholder {
     font-family: sans-serif;
-    color: #444; }
+    color: #8b949c; }
 
 .submit-btn {
   font-size: 1.6rem;
@@ -287,7 +287,7 @@ body {
   .testimony__textbox {
     max-width: 80rem;
     margin: 15rem auto;
-    color: #777;
+    color: #8b949c;
     font-size: 1.6rem;
     text-align: center; }
   .testimony__text {
@@ -355,7 +355,7 @@ body {
   display: grid;
   grid-template-columns: [full-start] 5rem 1fr 8rem [side-bar-start] repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr [content-end] 10rem [full-end];
   font-size: 1.6rem;
-  color: #666;
+  color: #8b949c;
   align-items: center;
   margin-top: -10rem;
   padding: 5rem 0;
