@@ -1,3 +1,20 @@
+.section-heading {
+  font-size: 3.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem; }
+
+/*
+0 - 600PX:  Phone
+600 - 900px: Tablet portriat
+900 - 1200px: Tablet landscape
+[1200 - 1800] is whter the normal style apply
+1800px or bigger: big desktop
+
+1em = 16px
+*/
 *,
 *::before,
 *::after {
@@ -10,6 +27,15 @@ html {
   font-weight: 500;
   line-height: 1.7;
   box-sizing: inherit; }
+  @media screen and (max-width: 75rem) {
+    html {
+      font-size: 56.25%; } }
+  @media screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -19,14 +45,9 @@ body {
   display: grid;
   grid-template-columns: [full-start] 5rem 1fr 8rem [side-bar-start] repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr [content-end] 10rem [full-end];
   grid-row-gap: 10rem; }
-
-.section-heading {
-  font-size: 3.3rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 1rem; }
+  @media screen and (max-width: 56.25em) {
+    #container {
+      grid-template-columns: [full-start] 2rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 2rem [full-end]; } }
 
 .header {
   grid-column: full-start / content-end;
@@ -35,6 +56,10 @@ body {
   background-position: bottom;
   height: 100vh;
   position: relative; }
+  @media screen and (max-width: 56.25em) {
+    .header {
+      grid-column: full-start / full-end;
+      grid-row: 1 / 2; } }
 
 .nav {
   font-size: 1.6rem;
@@ -54,6 +79,37 @@ body {
   .nav__list {
     color: #fff;
     text-decoration: none; }
+    @media screen and (max-width: 56.25em) {
+      .nav__list {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: -100vh;
+        transition: all .4s;
+        z-index: 10; } }
+
+.lines {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  display: none; }
+  @media screen and (max-width: 56.25em) {
+    .lines {
+      display: block; } }
+  .lines > * {
+    background-color: #fff;
+    width: 3rem;
+    height: .5rem;
+    margin-bottom: .6rem;
+    margin-left: -3rem; }
 
 .logo {
   margin-left: 5rem;
@@ -108,6 +164,9 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center; }
+  @media screen and (max-width: 56.25em) {
+    .partners {
+      display: none; } }
   .partners__img-box {
     width: 6rem;
     height: 5rem; }
@@ -129,6 +188,9 @@ body {
     box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2); }
   .services__text {
     font-size: 1.6rem; }
+    @media screen and (max-width: 56.25em) {
+      .services__text {
+        font-style: 1.8em; } }
     .services__text--heading {
       font-size: 2rem;
       font-weight: 300;
@@ -149,6 +211,9 @@ body {
   .about__text {
     font-size: 1.6rem;
     color: #8b949c; }
+    @media screen and (max-width: 56.25em) {
+      .about__text {
+        font-style: 1.8em; } }
   .about__gallery {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -253,6 +318,9 @@ body {
   .text-input::placeholder {
     font-family: sans-serif;
     color: #8b949c; }
+  @media screen and (max-width: 56.25em) {
+    .text-input {
+      font-style: 1.8em; } }
 
 .textarea {
   font-size: 1.6rem;
@@ -292,6 +360,10 @@ body {
     text-align: center; }
   .testimony__text {
     font-style: italic; }
+    @media screen and (max-width: 56.25em) {
+      .testimony__text {
+        padding: 3rem;
+        font-size: 1.8em; } }
   .testimony__heading {
     color: #805203;
     text-transform: uppercase; }
@@ -360,6 +432,9 @@ body {
   margin-top: -10rem;
   padding: 5rem 0;
   background-color: #0a0e16; }
+  @media screen and (max-width: 56.25em) {
+    .footer {
+      font-style: 1.8em; } }
   .footer__items {
     list-style: none;
     text-transform: capitalize; }

@@ -41,6 +41,10 @@
         font-family: sans-serif;
         color: #8b949c;
     }
+
+    @include respond(tab-port) {
+        font-style: 1.8em;
+    }
 }
 
 .textarea {

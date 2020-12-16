@@ -11,6 +11,10 @@
     padding: 5rem 0;
     background-color: $light-blue;
 
+    @include respond(tab-port) {
+        font-style: 1.8em;
+    }
+
     &__items {
         list-style: none;
         text-transform: capitalize;

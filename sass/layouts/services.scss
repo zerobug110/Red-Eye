@@ -20,7 +20,10 @@
     &__text {
         font-size: 1.6rem;
        //text-align: center;
-
+     
+        @include respond(tab-port) {
+            font-style: 1.8em;
+        }
 
         &--heading {
             font-size: 2rem;

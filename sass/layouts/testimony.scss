@@ -15,6 +15,11 @@
 
     &__text {
         font-style: italic;
+
+        @include respond(tab-port) {
+            padding: 3rem;
+            font-size: 1.8em
+        }
     }
 
     &__heading {
