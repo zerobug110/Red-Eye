@@ -26,7 +26,8 @@ html {
   font-family: sans-serif;
   font-weight: 500;
   line-height: 1.7;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  scroll-behavior: smooth; }
   @media screen and (max-width: 75rem) {
     html {
       font-size: 56.25%; } }
@@ -51,7 +52,7 @@ body {
 
 .header {
   grid-column: full-start / content-end;
-  background-image: radial-gradient(rgba(6, 9, 14, 0.9), rgba(6, 9, 14, 0.9)), url(../images/background7.jpg);
+  background-image: radial-gradient(rgba(6, 9, 14, 0.9), rgba(6, 9, 14, 0.9)), url(../images/header-img.jpg);
   background-size: cover;
   background-position: bottom;
   height: 100vh;
@@ -69,7 +70,7 @@ body {
   justify-content: space-between;
   align-items: center; }
   .nav__items {
-    width: 30rem;
+    width: 50rem;
     font-weight: 500;
     display: flex;
     justify-content: space-between;
